@@ -6,11 +6,9 @@ import { createStore, combineReducers } from 'redux';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import example from './store/reducers/example';
 import cats from "./store/reducers/cats";
 
 const rootReducer = combineReducers({
-	example: example,
 	cats: cats
 });
 

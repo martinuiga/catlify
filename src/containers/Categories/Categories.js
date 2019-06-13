@@ -41,7 +41,9 @@ class Categories extends Component {
 			<div>
 				{this.state.categories.map((value) => {
 					return (<div className="panel" key={value.id} onClick={() => this.changeCategory(value.id)}>
-						<div className="example-block">{value.name}</div>
+						<div className="block">
+							<span className="category">{value.name}</span>
+						</div>
 					</div>)
 				})}
 			</div>

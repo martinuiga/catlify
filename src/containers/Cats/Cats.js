@@ -4,7 +4,6 @@ import {connect} from 'react-redux';
 
 
 class Cats extends Component {
-
 	createCats = () => {
 		let table = [];
 
@@ -22,7 +21,6 @@ class Cats extends Component {
 		}
 		return table
 	};
-
 
 	render() {
 		return (

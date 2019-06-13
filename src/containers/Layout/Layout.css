@@ -16,6 +16,7 @@
 
 .App-title {
     font-size: 1.5em;
+	font-family: Arial, Helvetica, sans-serif
 }
 
 .App-intro {
@@ -32,13 +33,28 @@
 }
 
 
+.loadButton {
+	padding: 15px 32px;
+	text-align: center;
+	border-radius: 8px;
+	border: 2px solid black;
+	font-size: 16px;
+	background-color: #e7e7e7;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+.loadButton:hover {
+	background-color: #737373;
+}
+
 .container {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 }
 
-.some-page-wrapper {
+.picture-container {
 	margin: 15px;
 	width: 100%;
 }

@@ -2,11 +2,8 @@ import React, {Component} from 'react';
 import logo from '../../assets/images/logo.svg';
 import './Layout.css';
 import Cats from "../Cats/Cats";
-import Example from "../Example/Example";
 import Categories from "../Categories/Categories";
-
 import {connect} from 'react-redux';
-
 import * as actions from '../../store/actions/index';
 import {getCats} from "../../services/cats";
 
@@ -32,16 +29,15 @@ class Layout extends Component {
 			<div className="App">
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo"/>
-					<h1 className="App-title">Welcome to React</h1>
+					<h1 className="App-title">Welcome to the home of Cats!</h1>
 				</header>
-				<Example/>
 				<div className='container'>
 					<div className='categories'>
 						<Categories/>
 					</div>
-					<div className='some-page-wrapper'>
+					<div className='picture-container'>
 						<Cats/>
-						<button onClick={() => this.addToLimit()}>Load more</button>
+						<button className="loadButton" onClick={() => this.addToLimit()}>Load more</button>
 					</div>
 				</div>
 			</div>
