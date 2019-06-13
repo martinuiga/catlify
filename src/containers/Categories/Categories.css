@@ -1,0 +1,13 @@
+.example-block {
+	width: 100%;
+	height: 100px;
+	border-radius: 4px;
+	background: #ededed;
+	margin-top: 10px;
+	text-transform: capitalize;
+	margin-left: 10px;
+}
+
+.example-block:hover {
+	background-color: #707070;
+}

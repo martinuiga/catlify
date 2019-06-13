@@ -1,0 +1,30 @@
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	flex-basis: 100%;
+	padding: 10px;
+}
+
+.column-image img {
+	width: 700px;
+	height: 500px;
+}
+
+.green-column {
+	background-color: green;
+	height: 100px;
+}
+
+@media screen and (min-width: 800px) {
+	.column {
+		flex: 1
+	}
+}
