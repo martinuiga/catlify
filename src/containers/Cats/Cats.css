@@ -66,3 +66,17 @@
 		flex: 1
 	}
 }
+
+@media all and (max-width: 400px) {
+	.column-image img {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.column-image img {
+		width: 200px;
+		height: 200px;
+	}
+}

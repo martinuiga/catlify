@@ -32,6 +32,12 @@
     }
 }
 
+@media all and (max-width: 400px) {
+	.App-header {
+		width: 100%;
+	}
+}
+
 
 .loadButton {
 	padding: 15px 32px;
