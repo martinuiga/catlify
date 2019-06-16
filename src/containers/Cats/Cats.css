@@ -56,11 +56,6 @@
 	transform: scale(1.05);
 }
 
-.green-column {
-	background-color: green;
-	height: 100px;
-}
-
 @media screen and (min-width: 800px) {
 	.column {
 		flex: 1
