@@ -29,7 +29,7 @@ class Layout extends Component {
 			<div className="App">
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo"/>
-					<h1 className="App-title">Welcome to the home of Cats!</h1>
+					<h1 className="App-title">Welcome to CATLIFY!</h1>
 				</header>
 				<div className='container'>
 					<div className='categories'>
