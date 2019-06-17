@@ -18,25 +18,33 @@ describe('actions', () => {
 		expect(actions.setCategory(2)).toEqual(expectedAction)
 	});
 
-	it('Set category to two', () => {
-		const cats = [{
+	it('Dispatch cat objects', () => {
+		const oneCat = [{
 			"breeds": [],
 			"id": "27v",
 			"url": "https://cdn2.thecatapi.com/images/27v.jpg",
 			"width": 1024,
 			"height": 768
-		},
-			{
-				"breeds": [],
-				"id": "394",
-				"url": "https://cdn2.thecatapi.com/images/394.jpg",
-				"width": 413,
-				"height": 336
-			}];
-		const expectedAction = {
+		}];
+
+		const secondCat = [{
+			"breeds": [],
+			"id": "394",
+			"url": "https://cdn2.thecatapi.com/images/394.jpg",
+			"width": 413,
+			"height": 336
+		}];
+
+		const expectedActionOfOneCat = {
 			type: types.SET_CATS,
-			cats
+			cats: oneCat
 		};
-		expect(actions.setCats(cats)).toEqual(expectedAction)
+		const expectedActionOfCatsTogether = {
+			type: types.SET_CATS,
+			cats: secondCat
+		};
+
+		expect(actions.setCats(oneCat)).toEqual(expectedActionOfOneCat);
+		expect(actions.setCats(secondCat)).toEqual(expectedActionOfCatsTogether);
 	});
 });

@@ -37,7 +37,7 @@ class Layout extends Component {
 					</div>
 					<div className='picture-container'>
 						<Cats/>
-						<button className="loadButton" onClick={() => this.addToLimit()}>Load more</button>
+						{this.props.cats.length > 0 ? <button className="loadButton" onClick={() => this.addToLimit()}>Load more</button> : null }
 					</div>
 				</div>
 			</div>
